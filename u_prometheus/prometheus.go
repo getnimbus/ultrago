@@ -1,8 +1,8 @@
 package u_prometheus
 
 import (
+	"github.com/getnimbus/ultrago/u_logger"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/tikivn/ultrago/u_logger"
 )
 
 const (

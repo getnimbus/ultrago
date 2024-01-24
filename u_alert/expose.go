@@ -4,8 +4,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/tikivn/ultrago/u_env"
-	"github.com/tikivn/ultrago/u_logger"
+	"github.com/getnimbus/ultrago/u_env"
+	"github.com/getnimbus/ultrago/u_logger"
 )
 
 var (

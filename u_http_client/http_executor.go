@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff/v4"
-	"github.com/tikivn/ultrago/u_logger"
-	"github.com/tikivn/ultrago/u_prometheus"
+	"github.com/getnimbus/ultrago/u_logger"
+	"github.com/getnimbus/ultrago/u_prometheus"
 )
 
 func NewHttpExecutor() HttpExecutor {

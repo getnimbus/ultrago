@@ -3,7 +3,7 @@ package u_middleware
 import (
 	"net/http"
 
-	"github.com/tikivn/ultrago/u_logger"
+	"github.com/getnimbus/ultrago/u_logger"
 )
 
 func NewLogMiddleware() *LogMiddleware {

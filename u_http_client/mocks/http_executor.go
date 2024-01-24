@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"time"
 
-	http_client "github.com/tikivn/ultrago/u_http_client"
-	"github.com/tikivn/ultrago/u_logger"
-	"github.com/tikivn/ultrago/u_prometheus"
+	http_client "github.com/getnimbus/ultrago/u_http_client"
+	"github.com/getnimbus/ultrago/u_logger"
+	"github.com/getnimbus/ultrago/u_prometheus"
 	"moul.io/http2curl"
 )
 

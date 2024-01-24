@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/getnimbus/ultrago/u_logger"
 	"github.com/sirupsen/logrus"
-	"github.com/tikivn/ultrago/u_logger"
 )
 
 func (h *BaseHandler) BadRequest(w http.ResponseWriter, r *http.Request, err error) {

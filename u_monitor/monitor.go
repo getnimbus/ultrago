@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/tikivn/ultrago/u_logger"
+	"github.com/getnimbus/ultrago/u_logger"
 )
 
 // TimeTrack call defer TimeTrack(time.Now) at beginning of function that you want to track monitor

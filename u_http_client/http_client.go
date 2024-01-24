@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/getnimbus/ultrago/u_env"
+	"github.com/getnimbus/ultrago/u_logger"
 	"github.com/sirupsen/logrus"
-	"github.com/tikivn/ultrago/u_env"
-	"github.com/tikivn/ultrago/u_logger"
 	"moul.io/http2curl"
 )
 

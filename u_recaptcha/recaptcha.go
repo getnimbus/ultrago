@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/tikivn/ultrago/u_env"
-	"github.com/tikivn/ultrago/u_http_client"
-	"github.com/tikivn/ultrago/u_logger"
+	"github.com/getnimbus/ultrago/u_env"
+	"github.com/getnimbus/ultrago/u_http_client"
+	"github.com/getnimbus/ultrago/u_logger"
 )
 
 const (
@@ -48,9 +48,9 @@ func (c Recaptcha) VerifyCaptcha(ctx context.Context, captcha string) error {
 		return errors.New("missing captcha input")
 	}
 
-	params := map[string]string{
-		"secret":   c.secret,
-		"response": captcha,
+	params := map[string][]string{
+		"secret":   {c.secret},
+		"response": {captcha},
 	}
 
 	resp, err := u_http_client.NewHttpClient(c.httpExecutor, 5*time.Second).
@@ -61,7 +61,7 @@ func (c Recaptcha) VerifyCaptcha(ctx context.Context, captcha string) error {
 	}
 
 	var res SiteVerifyResponse
-	if err = json.Unmarshal(resp, &res); err != nil {
+	if err = json.Unmarshal(resp.Payload, &res); err != nil {
 		logger.Errorf("parse SiteVerifyResponse failed: %v", err)
 		return err
 	} else if err = res.Validate(c.threshold); err != nil {

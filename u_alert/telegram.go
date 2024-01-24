@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/getnimbus/ultrago/u_logger"
 	"github.com/go-telegram-bot-api/telegram-bot-api"
-	"github.com/tikivn/ultrago/u_logger"
 )
 
 type telegram struct {

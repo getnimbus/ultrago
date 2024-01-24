@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tikivn/ultrago/u_logger"
+	"github.com/getnimbus/ultrago/u_logger"
 )
 
 func init() {

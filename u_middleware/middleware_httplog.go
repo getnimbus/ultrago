@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/getnimbus/ultrago/u_logger"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/v5/middleware"
-	"github.com/tikivn/ultrago/u_logger"
 )
 
 func NewHttpLogMiddleware() *HttpLogMiddleware {

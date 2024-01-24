@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/getnimbus/ultrago/u_env"
 	"github.com/stretchr/testify/assert"
-	"github.com/tikivn/ultrago/u_env"
 )
 
 func TestTelegram(t *testing.T) {

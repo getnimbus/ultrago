@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/getnimbus/ultrago/u_prometheus"
 	"github.com/go-chi/chi/v5/middleware"
-	"github.com/tikivn/ultrago/u_prometheus"
 )
 
 func NewMetricMiddleware() *MetricMiddleware {

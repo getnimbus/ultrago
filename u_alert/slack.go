@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/getnimbus/ultrago/u_env"
+	"github.com/getnimbus/ultrago/u_logger"
 	slack_webhook "github.com/slack-go/slack"
-	"github.com/tikivn/ultrago/u_env"
-	"github.com/tikivn/ultrago/u_logger"
 )
 
 type slack struct {
